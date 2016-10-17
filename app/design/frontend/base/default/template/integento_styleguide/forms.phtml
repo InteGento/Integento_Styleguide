@@ -1,0 +1,101 @@
+<?php
+/**
+ * This file is part of Integento_Styleguide for Magento.
+ *
+ * @license MIT
+ * @author Darklg <darklg.blog@gmail.com> <@Darklg>
+ * @category Integento
+ * @package Integento_Styleguide
+ * @copyright Copyright (c) 2016 Integento (http://github.com/InteGento)
+ */
+
+/* ----------------------------------------------------------
+  Forms
+---------------------------------------------------------- */
+?>
+<h1>Forms</h1>
+<form action="#" method="post">
+    <div class="fieldset">
+        <h2 class="legend">Personal Information</h2>
+        <ul class="form-list">
+            <li class="fields">
+                <div class="customer-name-prefix">
+                    <div class="field name-prefix">
+                        <label for="prefix" class="required">
+                            <em>*</em>
+                            Prefix
+                        </label>
+                        <div class="input-box">
+                            <input id="prefixMadame" type="radio" value="Madame" name="prefix">
+                            <label for="prefixMadame">Madame</label>
+                            <input id="prefixMonsieur" type="radio" value="Monsieur" name="prefix">
+                            <label for="prefixMonsieur">Monsieur</label>
+                        </div>
+                    </div>
+                    <div class="field name-firstname">
+                        <label for="firstname" class="required">
+                            <em>*</em>
+                            First Name
+                        </label>
+                        <div class="input-box">
+                            <input type="text" id="firstname" name="firstname" value="" title="First Name" maxlength="255" class="input-text required-entry" data-com.agilebits.onepassword.user-edited="yes">
+                        </div>
+                    </div>
+                    <div class="field name-lastname">
+                        <label for="lastname" class="required">
+                            <em>*</em>
+                            Last Name
+                        </label>
+                        <div class="input-box">
+                            <input type="text" id="lastname" name="lastname" value="" title="Last Name" maxlength="255" class="input-text required-entry">
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <label for="email_address" class="required">
+                    <em>*</em>
+                    Email Address
+                </label>
+                <div class="input-box">
+                    <input type="text" name="email" id="email_address" value="" title="Email Address" class="input-text validate-email required-entry">
+                </div>
+            </li>
+            <li class="control">
+                <input type="checkbox" name="is_subscribed" title="Sign Up for Newsletter" value="1" id="is_subscribed" class="checkbox">
+                <label for="is_subscribed">Sign Up for Newsletter</label>
+            </li>
+            <li class="fields">
+                <div class="field">
+                    <label for="zip" class="required">
+                        <em>*</em>
+                        Zip/Postal Code
+                    </label>
+                    <div class="input-box">
+                        <input type="text" name="postcode" value="" title="Zip/Postal Code" id="zip" class="input-text validate-zip-international required-entry sanitize-zip-FR">
+                    </div>
+                </div>
+                <div class="field">
+                    <label for="country" class="required">
+                        <em>*</em>
+                        Country
+                    </label>
+                    <div class="input-box">
+                        <select name="country_id" id="country" class="validate-select" title="Country">
+                            <option value="">
+                            </option>
+                            <option value="FR" selected="selected">France</option>
+                        </select>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="buttons-set">
+        <p class="required">* Required Fields</p>
+        <p class="back-link"><a href="#"><small>« </small>Back</a></p>
+        <button data-action="save-customer-address" type="submit" title="Save Address" class="button button--secondary"><span><span>Remove Address</span></span></button>
+        <button data-action="save-customer-address" type="submit" title="Save Address" class="button"><span><span>Save Address</span></span></button>
+    </div>
+</form>
+<hr />

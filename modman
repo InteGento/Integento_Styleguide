@@ -1,1 +1,4 @@
+app/code/community/Integento/*                                        app/code/community/Integento
+app/etc/modules/Integento_Styleguide.xml                              app/etc/modules/Integento_Styleguide.xml
 app/design/frontend/base/default/template/integento_styleguide/*      app/design/frontend/base/default/template/integento_styleguide
+app/design/frontend/base/default/layout/integento_styleguide.xml      app/design/frontend/base/default/layout/integento_styleguide.xml

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category    Integento
+ * @package     Integento_Styleguide
+ * @copyright   Copyright (c) 2016 @Darklg
+ * @license     MIT
+ * @author      @Darklg
+ */
+-->
+<config>
+    <modules>
+        <Integento_Styleguide>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Integento_Styleguide>
+    </modules>
+</config>

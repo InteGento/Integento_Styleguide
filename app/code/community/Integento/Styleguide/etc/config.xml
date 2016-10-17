@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ * This file is part of Integento_Styleguide for Magento.
+ *
+ * @license MIT
+ * @author Darklg <darklg.blog@gmail.com> <@Darklg>
+ * @category Integento
+ * @package Integento_Styleguide
+ * @copyright Copyright (c) 2016 Integento (http://github.com/InteGento)
+ */
+-->
+<config>
+  <modules>
+    <Integento_Styleguide>
+      <version>0.1.0</version>
+    </Integento_Styleguide>
+  </modules>
+  <global>
+    <resources>
+      <integento_styleguide_setup>
+        <setup>
+          <module>Integento_Styleguide</module>
+          <class>Mage_Core_Model_Resource_Setup</class>
+        </setup>
+        <connection>
+          <use>core_setup</use>
+        </connection>
+      </integento_styleguide_setup>
+    </resources>
+  </global>
+</config>

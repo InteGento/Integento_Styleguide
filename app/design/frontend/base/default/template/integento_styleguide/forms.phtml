@@ -58,7 +58,7 @@
                     Email Address
                 </label>
                 <div class="input-box">
-                    <input type="text" name="email" alt="email" id="email_address" class="input-text required-entry validate-email validation-failed" value=""/>
+                    <input type="email" placeholder="address@example.com" name="email" alt="email" id="email_address" class="input-text required-entry validate-email validation-failed" value=""/>
                     <div class="validation-advice" id="advice-required-entry-email_address">This is a required field.</div>
                 </div>
             </li>
@@ -83,11 +83,19 @@
                     </label>
                     <div class="input-box">
                         <select name="country_id" id="country" class="validate-select" title="Country">
-                            <option value="">
-                            </option>
+                            <option value=""></option>
                             <option value="FR" selected="selected">France</option>
                         </select>
                     </div>
+                </div>
+            </li>
+            <li class="wide">
+                <label for="comment" class="required">
+                    <em>*</em>
+                    Comment
+                </label>
+                <div class="input-box">
+                    <textarea name="comment" id="comment" title="Comment" class="required-entry input-text" cols="5" rows="3"></textarea>
                 </div>
             </li>
         </ul>

@@ -25,16 +25,13 @@
         </tr>
     </thead>
     <tbody>
-        <tr>
-            <td>Cell content</td>
-            <td>Cell content</td>
-            <td>Cell content</td>
-        </tr>
-        <tr>
-            <td>Cell content</td>
-            <td>Cell content</td>
-            <td>Cell content</td>
-        </tr>
+    <?php for ($i = 0; $i < 10; $i++) { ?>
+    <tr>
+        <td><a href="#" class="product-image"><img src="http://placehold.it/100x100" alt="" /></a></td>
+        <td>Cell content</td>
+        <td>Cell content</td>
+    </tr>
+    <?php } ?>
     </tbody>
 </table>
 
